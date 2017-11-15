@@ -36,3 +36,5 @@ jobs:
             - ./vendor
           key: v1-dependencies-{{ checksum "composer.json" }}
         
+      # run tests!
+      - run: ./vender/bin/phpunit --bootstrap models/Email.php tests/unit/EmailTest
