@@ -31,9 +31,9 @@ jobs:
       
       - run: composer update
 
-      - run: wget https://phar.phpunit.de/phpunit-6.4.phar
-      - run: chmod +x phpunit-6.4.phar
-      - run: sudo mv phpunit-6.4.phar /usr/local/bin/phpunit
+      - run: wget https://phar.phpunit.de/phpunit-5.7.25.phar
+      - run: chmod +x phpunit-5.7.25.phar
+      - run: sudo mv phpunit-5.7.25.phar /usr/local/bin/phpunit
 
       - save_cache:
           paths:
